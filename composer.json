@@ -1,7 +1,7 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=8.2",
@@ -10,12 +10,22 @@
         "symfony/console": "7.2.*",
         "symfony/dotenv": "7.2.*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "7.2.*",
+        "symfony/framework-bundle": "dev-postal-mail",
+        "symfony/http-client": "7.2.*",
+        "symfony/notifier": "dev-postal-mail",
         "symfony/runtime": "7.2.*",
         "symfony/yaml": "7.2.*"
     },
-    "require-dev": {
-    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/raphael-geffroy/notifier.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/raphael-geffroy/framework-bundle.git"
+        }
+    ],
     "config": {
         "allow-plugins": {
             "php-http/discovery": true,

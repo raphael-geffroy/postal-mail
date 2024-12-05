@@ -1,0 +1,6 @@
+framework:
+    notifier:
+        poster_transports:
+            #mysendingbox: '%env(MY_SENDING_BOX_DSN)%'
+            #simonthemailman: '%env(SIMON_THE_MAILMAN_DSN)%'
+            #failover: '%env(MY_SENDING_BOX_DSN)% || %env(SIMON_THE_MAILMAN_DSN)%'
